@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Election Process Education</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>Election Process Education</h1>
+      <p>Learn how elections work, why voting matters, and how citizens can participate responsibly.</p>
+      <button onclick="startQuiz()">Take Quick Quiz</button>
+    </section>
+
+    <section class="cards" aria-label="Election steps">
+      <article><h2>1. Register</h2><p>Check eligibility and register as a voter.</p></article>
+      <article><h2>2. Verify</h2><p>Confirm voter ID and polling booth details.</p></article>
+      <article><h2>3. Vote</h2><p>Cast your vote privately and responsibly.</p></article>
+      <article><h2>4. Results</h2><p>Votes are counted and verified by election authorities.</p></article>
+    </section>
+
+    <section id="quiz" class="quiz" hidden>
+      <h2>Quick Quiz</h2>
+      <p id="question">Why is voting important?</p>
+      <button onclick="answer(true)">It supports democracy</button>
+      <button onclick="answer(false)">It has no impact</button>
+      <p id="result"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
